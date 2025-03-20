@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-StartWebServer<cantine>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "cantine.StartWebServer",
+      "projectName": "cantine",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "encoding": "CP850",
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+-- Schéma
+
+DROP SCHEMA IF EXISTS cantine CASCADE;
+CREATE SCHEMA cantine;
