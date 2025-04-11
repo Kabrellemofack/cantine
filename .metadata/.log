@@ -1,0 +1,123 @@
+!SESSION 2025-04-10 08:41:09.215 -----------------------------------------------
+eclipse.buildId=4.34.0.202411281622
+java.version=22.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-10 08:41:41.376
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-10 08:42:33.913
+!MESSAGE Logback config file: C:\Dossier_racine\cantine\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-10 08:42:38.839
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-10 08:42:38.840
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-10 08:42:41.418
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-10 08:42:41.419
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY com.gitlab.eclipse.gitlab-eclipse-plugin 1 0 2025-04-10 08:42:47.917
+!MESSAGE Successfully installed language server in C:\dev25\eclipse-STS-4.27\configuration\org.eclipse.osgi\692\data\gitlab-lsp.
+
+!ENTRY com.gitlab.eclipse.gitlab-eclipse-plugin 1 0 2025-04-10 08:42:50.706
+!MESSAGE Passing through NO_PROXY to the language server.
+
+!ENTRY com.gitlab.eclipse.gitlab-eclipse-plugin 1 0 2025-04-10 08:43:42.948
+!MESSAGE Language server logs saved to: C:\dev25\eclipse-STS-4.27\.gitlab_plugin\language_server.log.
+
+!ENTRY com.gitlab.eclipse.gitlab-eclipse-plugin 1 0 2025-04-10 08:43:54.168
+!MESSAGE Language server started successfully.
+
+!ENTRY com.gitlab.eclipse.gitlab-eclipse-plugin 1 0 2025-04-10 08:44:23.361
+!MESSAGE Initialized Language Server: InitializeResult [
+  capabilities = ServerCapabilities [
+    positionEncoding = null
+    textDocumentSync = Either [
+      left = Full
+      right = null
+    ]
+    notebookDocumentSync = null
+    hoverProvider = null
+    completionProvider = CompletionOptions [
+      resolveProvider = true
+      triggerCharacters = null
+      allCommitCharacters = null
+      completionItem = null
+      workDoneProgress = null
+    ]
+    signatureHelpProvider = null
+    definitionProvider = null
+    typeDefinitionProvider = null
+    implementationProvider = null
+    referencesProvider = null
+    documentHighlightProvider = null
+    documentSymbolProvider = null
+    workspaceSymbolProvider = null
+    codeActionProvider = null
+    codeLensProvider = null
+    documentFormattingProvider = null
+    documentRangeFormattingProvider = null
+    documentOnTypeFormattingProvider = null
+    renameProvider = null
+    documentLinkProvider = null
+    colorProvider = null
+    foldingRangeProvider = null
+    declarationProvider = null
+    executeCommandProvider = null
+    workspace = WorkspaceServerCapabilities [
+      workspaceFolders = WorkspaceFoldersOptions [
+        supported = true
+        changeNotifications = Either [
+          left = null
+          right = true
+        ]
+      ]
+      fileOperations = null
+    ]
+    typeHierarchyProvider = null
+    callHierarchyProvider = null
+    selectionRangeProvider = null
+    linkedEditingRangeProvider = null
+    semanticTokensProvider = null
+    monikerProvider = null
+    inlayHintProvider = null
+    inlineValueProvider = null
+    diagnosticProvider = null
+    experimental = null
+  ]
+  serverInfo = ServerInfo [
+    name = "GitLab Language Server"
+    version = "7.15.0"
+  ]
+]
+
+!ENTRY com.gitlab.eclipse.gitlab-eclipse-plugin 1 0 2025-04-10 08:44:23.442
+!MESSAGE Sending configuration change notification to Language Server.
+
+!ENTRY com.gitlab.eclipse.gitlab-eclipse-plugin 1 0 2025-04-10 08:44:23.651
+!MESSAGE Sending configuration change notification to Language Server.
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-04-10 08:44:31.304
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-10 08:44:37.012
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\lemof'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2025-04-10 08:45:46.420
+!MESSAGE Setup tasks were performed during startup updating 66 preferences. See 'C:\dev25\eclipse-STS-4.27\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY com.gitlab.eclipse.gitlab-eclipse-plugin 1 0 2025-04-10 08:50:31.045
+!MESSAGE Ended all Code Suggestion sessions.
+
+!ENTRY com.gitlab.eclipse.gitlab-eclipse-plugin 1 0 2025-04-10 08:50:31.129
+!MESSAGE Language Server exited.
