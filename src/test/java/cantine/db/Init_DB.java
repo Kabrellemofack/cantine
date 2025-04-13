@@ -29,6 +29,7 @@ public class Init_DB {
 			"/db/3-compte.sql",
 			"/db/3-plat.sql",
 	} )
+	@Sql({"/db/3-ingredient.sql"})
 	void db_3_Data() {
 	}
 
