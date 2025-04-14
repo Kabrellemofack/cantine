@@ -16,4 +16,8 @@ public interface DaoPlat extends CrudRepository<Plat, Long>, PagingAndSortingRep
 	Page<Plat> findByNomContaining( String search, Pageable pageable );
 	@Query( "SELECT COUNT(*) FROM plat WHERE id_type_plat = :idTypePlat")
 	long  compterPourIdTypePlat(@Param("idTypePlat") Long idTypePlat);
+	
+	@Query("SELECT COUNT(*) = 0 FROM plat WHERE nom = :nom AND id_plat <> COALESCE(:id, 0)")
+	boolean verifierUniciteNom(@Param("nom") String nom, @Param("id") Long id);
+
 }

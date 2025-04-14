@@ -48,12 +48,14 @@
                 <thead class="table-success">
                   <tr class="align-middle">
                     <th>Nom</th>
+                    <th>Type</th>
                     <th class="text-center">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr th:each="item:${list}" th:object="${item}" class="align-middle">
                     <td th:text="*{nom}" class="text-truncate" style="width: 60%; max-width: 0;"></td>
+                    <td class="text-truncate" style="width:21%;max-width:0">typePlat</td>
                     <td class=" py-0 text-center" style="font-size: 1.2rem;">
                       <a title="Modifier" th:href="@{/plat/form(id=*{idPlat})}"
                         class="text-secondary bi-pencil-square"></a>&nbsp;
