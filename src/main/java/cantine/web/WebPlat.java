@@ -2,6 +2,7 @@ package cantine.web;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import cantine.dao.DaoPlat;
+import cantine.dao.DaoTypePlat;
 import cantine.data.Plat;
 import cantine.util.Alert;
 import cantine.util.Paging;
@@ -31,6 +33,7 @@ public class WebPlat {
 	// -------
 
 	private final DaoPlat		daoPlat;
+	private final DaoTypePlat		daoTypePlat;
 
 	// -------
 	// Attributs de session
@@ -97,6 +100,8 @@ public class WebPlat {
 		}
 
 		model.addAttribute( "item", item );
+		model.addAttribute("typePlats", daoTypePlat.findAll());
+
 		return "plat/form";
 
 	}
@@ -130,16 +135,18 @@ public class WebPlat {
 	// -------
 	// Méthodes auxiliaires
 	// ------
+	private Page<Plat> getPage(Paging paging) {
+	    var pageable = PageRequest.of(paging.getPageNum() - 1, paging.getPageSize(), Sort.by("nom"));
 
-	private Page<Plat> getPage( Paging paging ) {
+	    String rechercher = paging.getSearch();
 
-		var pageable = PageRequest.of( paging.getPageNum() - 1, paging.getPageSize() );
-
-		Page<Plat> page;
-		page = daoPlat.findAll( pageable );
-
-		return page;
-
+	    if (rechercher == null || rechercher.isEmpty()) {
+	        return daoPlat.findAll(pageable); 
+	    } else {
+	        return daoPlat.findByNomContaining(rechercher, pageable);  
+	    }
 	}
+
+
 
 }
